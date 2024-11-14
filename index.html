@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deriv Trading Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Deriv Trading Bot</h1>
+  <div class="container">
+    <div class="input-section">
+      <label for="symbol">Symbol:</label>
+      <input type="text" id="symbol" placeholder="Enter the symbol">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter the amount">
+      <label for="duration">Duration:</label>
+      <input type="number" id="duration" placeholder="Enter the duration">
+      <button id="buy-call">Buy Call</button>
+      <button id="buy-put">Buy Put</button>
+    </div>
+    <div class="output-section">
+      <h2>Trade History</h2>
+      <ul id="trade-history"></ul>
+      <div id="status"></div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
