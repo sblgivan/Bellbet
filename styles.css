@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -13,50 +14,82 @@ body {
   margin: 20px;
 }
 
+/* Input Section Styles */
 .input-section {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
+  width: 300px;
 }
 
+.input-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-section button {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Output Section Styles */
 .output-section {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
-input, button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+.output-section h2 {
+  margin-top: 0;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-ul {
+.output-section ul {
   list-style-type: none;
   padding: 0;
+}
+
+.output-section li {
+  margin-bottom: 10px;
 }
 
 #status {
   font-weight: bold;
   color: #4CAF50;
   margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
 
-li {
-  margin-bottom: 5px;
+  .input-section,
+  .output-section {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
